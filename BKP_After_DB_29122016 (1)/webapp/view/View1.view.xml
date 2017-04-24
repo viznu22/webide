@@ -1,0 +1,51 @@
+<mvc:View controllerName="com.sap.so.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n&gt;title}">
+				<content>
+					<sap.ui.layout:VerticalLayout class="sapUiContentPadding" id="__layout0" width="100%" xmlns:sap.ui.layout="sap.ui.layout">
+						<sap.ui.layout:content>
+							<Label id="OrderType" text="{i18n>OrderType}" width="30%"/>
+							<Input id="OrderTypeIp" placeholder="{i18n>OrderTypeIp}" showSuggestion="true" showValueHelp="true" value=""
+								valueHelpRequest="onOpenOrderTypeIp" width="30%"/>
+								
+								
+								<Panel headerText="{i18n>SalAreaPanel}" id="SalAreaPanel" width="100%" visible="true">
+								<customData>
+									<sap.ui.core:CustomData id="__data7" key="sap-ui-fastnavgroup" value="true" writeToDom="true" xmlns:sap.ui.core="sap.ui.core"/>
+								</customData>
+								<content>
+										<Input id="pass1" visible="false" />
+										<Input id="pass2" visible="false" />
+										<Input id="pass3" visible="false"/>
+										<Input id="pass4" visible="false" />
+									
+							
+									
+									<Label id="SalesOrg" text="{i18n>salorg}" width="30%"/>
+									<Input id="SalesOrgIP" placeholder="{i18n>SalesOrgIP}" showSuggestion="true" showValueHelp="true" value=""
+										valueHelpRequest="onSalesOrgIP" width="60%"/>
+									<Label id="DistChannel" text="{i18n>Distribution Channel}" width="30%"/>
+									<Input id="DistChannelIP" placeholder="{i18n>DistChannelIP}" showSuggestion="true" showValueHelp="true" type="Text"
+										valueHelpRequest="onDistChannelIP" width="60%"/>
+									<Label id="Div" text="{i18n>Div}" width="30%"/>
+									<Input id="DivIP" placeholder="{i18n>DivIP}" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onDivIP"
+										width="60%"/>
+								</content>
+							</Panel>
+						</sap.ui.layout:content>
+					</sap.ui.layout:VerticalLayout>
+
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button press="onShowHello" text="Create with Reference" type="Emphasized"/>
+						<!--<Button press="onPress" text="Check" type="Accept"/> -->
+						<Button icon="sap-icon://navigation-right-arrow" press="onRightArrow"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

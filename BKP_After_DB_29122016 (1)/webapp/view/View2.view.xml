@@ -1,0 +1,257 @@
+<mvc:View controllerName="com.sap.so.controller.View2" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page navButtonPress="onNavButtonPressed" showNavButton="true" title="{i18n&gt;title}">
+				<content>
+					<sap.ui.layout:VerticalLayout class="sapUiContentPadding" id="__layout0" width="100%" xmlns:sap.ui.layout="sap.ui.layout">
+						<sap.ui.layout:content>
+							<Panel headerText="{i18n&gt;SalOrdTyp}" id="SalOrdTyp" width="60%">
+								<customData>
+									<core:CustomData id="__data1" key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+								</customData>
+								<content>
+									<Label id="SoldToParty" text="{i18n&gt;SoldToParty}" width="30%"/>
+									<Input id="SoldToPartyIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onSoldToPartyIP" width="60%"/>
+									<Label id="ShipToParty" text="{i18n&gt;ShipToParty}" width="30%"/>
+									<Input id="ShipToPartyIP" placeHolder="{i18n&gt;ShipToPartyIP}" showSuggestion="true" showValueHelp="true" type="Text"
+										valueHelpRequest="onShipToPartyIP" width="60%"/>
+									<Label id="PurOrdNo" text="{i18n&gt;PurOrdNo}" width="30%"/>
+									<Input id="PurOrdNoIP" width="60%"/>
+									<Label id="PurOrdDt" text="{i18n&gt;PurOrdDt}" width="30%"/>
+									<DatePicker id="PurOrdDtIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onPurOrdDtIP"  width="60%" valueFormat="yyyyMMdd"/>
+								</content>
+							</Panel>
+							<IconTabBar class="sapUiResponsiveContentPadding" id="idIconTabBarSOfiori" upperCase="true">
+								<items>
+									<IconTabFilter count="" text="{i18n&gt;sales}">
+										<content>
+											<sap.ui.layout:Grid class="sapUiContentPadding" id="__grid0">
+												<sap.ui.layout:content>
+													<Label id="ReqDeliveryDt" text="{i18n&gt;ReqDeliveryDt}" width="100%"/>
+													<DatePicker id="ReqDeliveryDtIP" width="100%" valueFormat="yyyyMMdd" />
+													<Label id="DeliveryPlant" text="{i18n&gt;DeliveryPlant}"/>
+													<Input id="DeliveryPlantIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onDeliveryPlantIP" width="100%"/>
+													<Label id="DeliveryBlk" text="{i18n&gt;DeliveryBlk}"/>
+													<Input id="DeliveryBlkIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onDeliveryBlkIP" width="100%"/>
+													<Label id="PricingDt" text="{i18n&gt;PricingDt}"/>
+													<DatePicker id="PricingDtIP" width="100%" valueFormat="yyyyMMdd"/>
+													<Label id="BillBlk" text="{i18n&gt;BillBlk}"/>
+													<Input id="BillBlkIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onBillBlkIP" width="100%"/>
+													<Label id="OrdReason" text="{i18n&gt;OrdReason}"/>
+													<Input id="OrdReasonIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onOrdReasonIP" width="100%"/>
+													<Label id="PayTerm" text="{i18n&gt;PayTerm}"/>
+													<Input id="PayTermIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onPaytermIP" width="100%"/>
+													<Label id="Incoterms" text="{i18n&gt;Incoterms}"/>
+													<Input id="IncotermsIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onIncotermsIP" width="100%"/>
+													<Label id="SalArea" text="{i18n&gt;SalArea}"/>
+													<Input id="SalAreaIP" showSuggestion="true" showValueHelp="true" type="Text" valueHelpRequest="onSalAreaIP" width="100%"/>
+												</sap.ui.layout:content>
+											</sap.ui.layout:Grid>
+										</content>
+									</IconTabFilter>
+									<IconTabFilter count="" text="{i18n&gt;Material}">
+										<content>
+											<Toolbar>
+												<Title text="Sales Orders" titleStyle="H2"/>
+												<ToolbarSpacer/>
+												<ToolbarSpacer/>
+												<Button enabled="true" icon="sap-icon://add" press="onAdd"/>
+												<Button enabled="true" icon="sap-icon://delete" id="deleteSalesOrder" press="onDeleteSalesOrder"/>
+												<ToolbarSeparator/>
+												<Button icon="sap-icon://refresh" press="onRefreshSalesOrdersList"/>
+												<ToolbarSpacer/>
+											</Toolbar>
+											<sap.ui.layout:VerticalLayout id="__layout1" width="100%">
+												<sap.ui.layout:content>
+													<Table id="__table1" noDataText="Drop column list items here and columns in the area above">
+														<customData>
+															<core:CustomData id="__data29" key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+														</customData>
+														<items>
+															<ColumnListItem counter="0" id="__item8">
+																<cells>
+																	<Input editable="false" id="Mattableitem" maxLines="0" text=""/>
+																	<Input id="MattableMaterial" maxLines="0" showSuggestion="true" showValueHelp="true" valueHelpRequest="onGetMaterialIP"/>
+																	<Input id="MattableQty" maxLines="0" text=" "/>
+																	<Input id="MattableUom" maxLines="0" showSuggestion="true" showValueHelp="true" valueHelpRequest="onGetuomIP"/>
+																	<Input editable="False" id="MattableDesc" maxLines="0"/>
+																	<Input editable="false" id="MattableReqDD" maxLines="0" text=" "/>
+																	<Input id="MattablePlant" maxLines="0" editable="false"/>
+																	<Input id="CustMaterial" maxLines="0" text="Cust.Material.No"/>
+																</cells>
+															</ColumnListItem>
+														</items>
+														<columns>
+															<Column id="__column3">
+																<header>
+																	<Label id="__label1" text="Item"/>
+																</header>
+															</Column>
+															<Column id="__column4">
+																<header>
+																	<Label id="__label2" text="Material"/>
+																</header>
+															</Column>
+															<Column id="__column5">
+																<header>
+																	<Label id="__label3" text="Order.Qty"/>
+																</header>
+															</Column>
+															<Column id="__column3_copy">
+																<header>
+																	<Label text="UOM"/>
+																</header>
+															</Column>
+															<Column id="__column3_copy4">
+																<header>
+																	<Label text="Description"/>
+																</header>
+															</Column>
+															<Column id="__column3_copy5">
+																<header>
+																	<Label text="Requested Date"/>
+																</header>
+															</Column>
+															<Column id="__column3_copy6">
+																<header>
+																	<Label text="Plant"/>
+																</header>
+															</Column>
+															<Column id="__column3_copy7">
+																<header>
+																	<Label text="Cust.Material.No"/>
+																</header>
+															</Column>
+														</columns>
+													</Table>
+													<!--		<Toolbar>-->
+													<!--		<Input editable="false" id="Mattableitem1" maxLines="0" text=""/>-->
+													<!--				<Input id="MattableMaterial1" maxLines="0" showSuggestion="true" showValueHelp="true" valueHelpRequest="onGetMaterialIP"/>-->
+													<!--				<Input id="MattableQty1" maxLines="0" text=" "/>-->
+													<!--				<Input id="MattableUom1" maxLines="0" showSuggestion="true" showValueHelp="true" valueHelpRequest="onGetuomIP"/>-->
+													<!--				<Input editable="False" id="MattableDesc1" maxLines="0"/>-->
+													<!--				<Input editable="false" id="MattableReqDD1" maxLines="0" text=" "/>-->
+													<!--				<Input id="MattablePlant1" maxLines="0" editable="false"/>-->
+													<!--				<Input id="CustMaterial1" maxLines="0" text="Cust.Material.No"/>-->
+													<!--</Toolbar>-->
+													<!--	<Toolbar>-->
+													<!--		<Input editable="false" id="Mattableitem2" maxLines="0" text=""/>-->
+													<!--				<Input id="MattableMaterial2" maxLines="0" showSuggestion="true" showValueHelp="true" valueHelpRequest="onGetMaterialIP"/>-->
+													<!--				<Input id="MattableQty2" maxLines="0" text=" "/>-->
+													<!--				<Input id="MattableUom2" maxLines="0" showSuggestion="true" showValueHelp="true" valueHelpRequest="onGetuomIP"/>-->
+													<!--				<Input editable="False" id="MattableDesc2" maxLines="0"/>-->
+													<!--				<Input editable="false" id="MattableReqDD2" maxLines="0" text=" "/>-->
+													<!--				<Input id="MattablePlant2" maxLines="0" editable="false"/>-->
+													<!--				<Input id="CustMaterial2" maxLines="0" text="Cust.Material.No"/>-->
+													<!--</Toolbar>-->
+												</sap.ui.layout:content>
+											</sap.ui.layout:VerticalLayout>
+										
+										</content>
+									</IconTabFilter>
+									<IconTabFilter count="" text="{i18n&gt;ReForRejection}">
+										<content>
+											<Table id="__table0" noDataText="Drop column list items here and columns in the area above">
+												<customData>
+													<core:CustomData id="__data28" key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+												</customData>
+												<items>
+													<ColumnListItem counter="0" id="__item0">
+														<cells>
+															<Input editable="false" id="RfrtableItem" maxLines="0" text=""/>
+															<Input editable="false" id="RfrtableMaterial" maxLines="0" text=""/>
+															<Input id="RfrtableReasons" maxLines="0" showSuggestion="true" showValueHelp="true" valueHelpRequest="onGetRfrIP"/>
+														</cells>
+													</ColumnListItem>
+												</items>
+												<columns>
+													<Column id="__column0">
+														<header>
+															<Label id="RFRH.Item" text="{i18n&gt;Item}"/>
+														</header>
+													</Column>
+													<Column id="__column1">
+														<header>
+															<Label id="RFRH.Material" text="{i18n&gt;Material}"/>
+														</header>
+													</Column>
+													<Column id="__column2">
+														<header>
+															<Label id="RFRH.ReasonForRejection" text="{i18n&gt;ReForRejection}"/>
+														</header>
+													</Column>
+												</columns>
+											</Table>
+										</content>
+									</IconTabFilter>
+									<IconTabFilter count="" text="{i18n&gt;opsd}">
+										<content>
+											<Panel expandable="true" headerText="{i18n&gt;PortDtl}" id="PortDtl">
+												<customData>
+													<core:CustomData id="__data17" key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+												</customData>
+												<content>
+													<Label id="PortoFShipmnt" text="{i18n&gt;PortoFShipmnt}" width="30%"/>
+													<Input id="PortoFShipmntIP" width="60%"/>
+													<Label id="PortoFDesti" text="{i18n&gt;PortoFDesti}" width="30%"/>
+													<Input id="PortoFDestiIP" width="60%"/>
+												</content>
+											</Panel>
+											<Panel expand="true" expandable="true" headerText="{i18n&gt;WtTerm}" id="WtTerm">
+												<customData>
+													<core:CustomData id="WtTermsIPCusdata" key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+												</customData>
+												<content>
+													<Label id="WtTerms" text="{i18n&gt;WtTerms}" width="30%"/>
+													<Input id="WtTermsIP" width="60%"/>
+												</content>
+											</Panel>
+											<Panel expand="true" expandable="true" headerText="{i18n&gt;ScheduleLine}" id="ScheduleLine">
+												<customData>
+													<core:CustomData id="ScheduleLineIP" key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+													<core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+												</customData>
+												<content>
+													<Label id="OrderBasis" text="{i18n&gt;OrderBasis}" width="30%"/>
+													<Input id="OrderBasisIP" width="60%"/>
+												</content>
+											</Panel>
+											<Panel expand="true" expandable="true" headerText="{i18n&gt;PKGDTL}" id="PKGDTL">
+												<customData>
+													<core:CustomData id="PKGDTLIP" key="sap-ui-fastnavgroup" value="true" writeToDom="true"/>
+													<core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+												<content>
+													<sap.ui.layout:Grid id="__grid1">
+														<sap.ui.layout:content>
+															<Label id="NoofPacking" text="{i18n&gt;NoofPacking}" width="100%"/>
+															<Input id="NoofPackingIP" width="100%"/>
+															<Label id="PackingUOM" text="{i18n&gt;PackingUOM}" width="100%"/>
+															<Input id="PackingUOMIP" width="100%"/>
+															<Label id="PerPack" text="{i18n&gt;Qty.PerPack}" width="100%"/>
+															<Input id="PerPackIP" width="100%"/>
+															<Label id="PackingType" text="{i18n&gt;PackingType}" width="100%"/>
+															<Input id="PackingTypeIP" width="100%"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</content>
+											</Panel>
+											
+										</content>
+										
+									</IconTabFilter>
+								</items>
+							</IconTabBar>
+						</sap.ui.layout:content>
+					</sap.ui.layout:VerticalLayout>
+				</content>
+				<footer>
+											<Toolbar>
+												<ToolbarSpacer/>
+												<Button text="Place Order" press="onPlaceOrder" type="Accept"/>
+											</Toolbar>
+										</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

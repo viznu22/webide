@@ -1,0 +1,111 @@
+{
+    "resources": [
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "controller/Main.controller.js"
+        },
+        {
+            "name": "controller/View1.controller.js"
+        },
+        {
+            "name": "controller/View2.controller.js"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "model/valueHelper.json"
+        },
+        {
+            "name": "preview_hidden.html"
+        },
+        {
+            "name": "view/Fragments/AdditemDialog.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onBillBlkFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onDeliveryBlkFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onDeliveryPlantFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onDistChannelFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onDivFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onGetMaterialFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onGetPlantFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onGetRfrFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onGetuomFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onIncotermsFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onOpenOrderTypeFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onOrdReasonFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onPaytermFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onPurOrdDtFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onSalAreaFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onSalesOrgFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onShipToPartyFrag.fragment.xml"
+        },
+        {
+            "name": "view/Fragments/onSoldToPartyFrag.fragment.xml"
+        },
+        {
+            "name": "view/Main.view.xml"
+        },
+        {
+            "name": "view/View1.view.xml"
+        },
+        {
+            "name": "view/View2.view.xml"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "neo-app.json"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Bottom" showHeader="false">
+  <Page id="onBillBlkFragPage" title="{i18n>BillBlk}">
+  <List id="onBillBlkFragList" items="{/Billingblock}" mode="SingleSelectMaster" selectionChange="onSLIonBilBlkIP">
+   <items>
+    <StandardListItem id = "onBillBlkFragSli" title="{Description}" description="{Value}"/>
+   </items>
+  </List>
+  </Page>
+  </Popover>
+  </core:FragmentDefinition>

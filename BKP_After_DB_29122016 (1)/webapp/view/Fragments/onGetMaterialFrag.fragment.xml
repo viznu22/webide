@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Top" showHeader="false">
+  <Page id="onGetMaterialFragPage" title="{i18n>Material}">
+  <List id="onGetMaterialFragList" items="{/Material}" mode="SingleSelectMaster" selectionChange="onSLIonGetMaterialIP">
+   <items>
+    <StandardListItem id = "onGetMaterialFragSli" title="{Description}" description="{Value}"/>
+   </items>
+  </List>
+    </Page>
+  </Popover>
+  </core:FragmentDefinition>

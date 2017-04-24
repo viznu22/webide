@@ -1,0 +1,200 @@
+{	"Ordertype": [{
+		"Value": "OR",
+		"Description": "Standard Order"
+	}, {
+		"Value": "ZCR",
+		"Description": "Credit Memo Request"
+	}, {
+		"Value": "ZDR",
+		"Description": "Debit Memo request"
+	}],
+	"SalesOrg": [{
+		"Value": "0001",
+		"Description": "OLAM India"
+	}, {
+		"Value": "1000",
+		"Description": "OLAM"
+	}],
+	"DistributionChannel": [{
+
+		"Value": "10",
+		"Description": "Local Sales"
+	}, {
+		"Value": "20",
+		"Description": "Export Sales"
+	}, {
+		"Value": "30",
+		"Description": "Other Sales"
+	}],
+	"Division": [{
+
+		"Value": "10",
+		"Description": "Equipments"
+	}, {
+		"Value": "20",
+		"Description": "Projects"
+	}, {
+		"Value": "30",
+		"Description": "Other"
+	}],
+	"SOP": [{
+
+		"Value": "0000100010",
+		"Description": "OLAM customer"
+	}, {
+		"Value": "0002000040",
+		"Description": "OLAM customer-1"
+	}],
+	"Billingblock": [{
+			"Value": "01",
+			"Description": "Calculation Missing"
+		}, {
+			"Value": "02",
+			"Description": "Compl Confirm Missing"
+		},
+		{
+			"Value": "03",
+			"Description": "Prices Incomplete"
+		}
+	],
+	"Deliveryblock": [{
+		"Value": "01",
+		"Description": "Credit limit"
+	}, {
+		"Value": "02",
+		"Description": "Political reasons"
+	}, {
+		"Value": "03",
+		"Description": "Bottleneck material"
+	}],
+	"Paymentterms": [{
+		"Value": "NT07",
+		"Description": "Net due in 07 days"
+	}, {
+		"Value": "NT15",
+		"Description": "Net due in 15 days"
+	}, {
+		"Value": "NT15",
+		"Description": "Net due in 30 days"
+	}],
+	"Deliveryplant": [{
+		"Value": "1101",
+		"Description": "HO - Head Office"
+	}, {
+		"Value": "1102",
+		"Description": "Equipment Pool"
+	}, {
+		"Value": "1105",
+		"Description": "ARGAS Projects"
+	}],
+	"Incoterms": [{
+		"Value": "CFR",
+		"Description": "Costs and freight"
+	},
+	{
+		"Value": "CIF",
+		"Description": "Costs, insurance & freight"
+	}, 
+	{
+		"Value": "FCA",
+		"Description": "FCA"
+	}, {
+		"Value": "CIP",
+		"Description": "Carriage and insurance paid to"
+	}],
+	"Orderreason": [{
+		"Value": "001",
+		"Description": "Sales Call"
+	}, {
+		"Value": "002",
+		"Description": "Trade fair sales activity"
+	}, {
+		"Value": "003",
+		"Description": "Television commercial"
+	}, {
+		"Value": "004",
+		"Description": "Customer recommendation"
+	}, {
+		"Value": "005",
+		"Description": "Newspaper advertisement"
+	}],
+	"Material": [{
+		"Value": "3000001622",
+		"Description": "ALLOY RIM"
+	}, 
+	{
+		"Value": "1000000493",
+		"Description": "Olam Coffee Test"
+	}, {
+		"Value": "3000002422",
+		"Description": "Olam Cashew Test"
+	}, {
+		"Value": "3000002423",
+		"Description": "Olam Zucchini Test"
+	}],
+	"UOM": [{
+		"Value": "KG",
+		"Description": "Kilogram"
+	}, 
+	{
+		"Value": "L",
+		"Description": "Liters"
+	}, 
+	{
+		"Value": "EA",
+		"Description": "Each"
+	}, {
+		"Value": "G",
+		"Description": "Gram"
+	}, {
+		"Value": "KT",
+		"Description": "Kilotonne"
+	}, {
+		"Value": "LB",
+		"Description": "US pound"
+	}, {
+		"Value": "MG",
+		"Description": "Milligram"
+	}],
+	"Plant": [{
+			"Value": "1101",
+			"Description": "HO - Head Office"
+		}, {
+			"Value": "1105",
+			"Description": "ARGAS Projects"
+		}
+
+	],
+	"ReasonForRejection": [ {
+		"Value": "01",
+		"Description": "Delivery date too late"
+	}, {
+		"Value": "02",
+		"Description": "Poor quality"
+	}, {
+		"Value": "03",
+		"Description": "Too expensive"
+	}, {
+		"Value": "04",
+		"Description": "Competitor better"
+	}, {
+		"Value": "05",
+		"Description": "Guarantee"
+	}, {
+		"Value": "10",
+		"Description": "Unreasonable request"
+	}, {
+		"Value": "11",
+		"Description": "cust.to receive replacement"
+	}, {
+		"Value": "12",
+		"Description": "Technical Change"
+	}, {
+		"Value": "50",
+		"Description": "Transaction is being Checked"
+	}, {
+		"Value": "60",
+		"Description": "Customer Lost Contract"
+	}]
+
+}

@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Top" showHeader="false">
+  <Page id="onPaytermFragPage" title="{i18n>PayTerm}">
+  <List id="onPaytermFragList" items="{/Paymentterms}" mode="SingleSelectMaster" selectionChange="onSLIonPaytermIP">
+   <items>
+    <StandardListItem id = "onPaytermFragSli" title="{Description}" description="{Value}"/>
+   </items>
+  </List>
+    </Page>
+  </Popover>
+  </core:FragmentDefinition>

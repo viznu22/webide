@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Top" showHeader="false">
+  <Page id="onIncotermsFragPage" title="{i18n>IncoTerms}">
+  <List id="onIncotermsFragList" items="{/Incoterms}" mode="SingleSelectMaster" selectionChange="onSLIonIncotermsIP">
+   <items>
+    <StandardListItem id = "onIncotermsFragSli" title="{Description}" description="{Value}"/>
+   </items>
+  </List>
+    </Page>
+  </Popover>
+  </core:FragmentDefinition>

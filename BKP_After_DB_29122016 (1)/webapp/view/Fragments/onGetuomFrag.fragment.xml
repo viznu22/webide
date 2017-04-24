@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Top" showHeader="false">
+  <Page id="onGetuomFragPage" title="{i18n>uom}">
+  <List id="onGetuomFragList" items="{/UOM}" mode="SingleSelectMaster" selectionChange="onSLIonGetuomIP">
+   <items>
+    <StandardListItem id = "onGetuomFragSli" title="{Description}" description="{Value}"/>
+   </items>
+  </List>
+  </Page>
+  </Popover>
+  </core:FragmentDefinition>

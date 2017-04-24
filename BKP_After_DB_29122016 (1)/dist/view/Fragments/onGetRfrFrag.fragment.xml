@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Top" showHeader="false">
+  <Page id="onGetRfrFragPage" title="{i18n>ReForRejection}">
+  <List id="onGetRfrFragList" items="{/ReasonForRejection}" mode="SingleSelectMaster" selectionChange="onSLIonGetRfrIPItem">
+   <items>
+    <StandardListItem id = "onGetRfrFragSli" title="{Description}" description="{Value}"/>
+   </items>
+  </List>
+    </Page>
+  </Popover>
+  </core:FragmentDefinition>

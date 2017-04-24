@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Bottom" showHeader="false">
+  <Page id="onDistChannelFragPage" title="{i18n>DistChannelIP}">
+  <List id="onDistChannelFragList" items="{/DistributionChannel}" mode="SingleSelectMaster" selectionChange="onDistChannelIPD">
+   <items>
+    <StandardListItem id = "onDistChannelFragSli" title="{Description}" description="{Value}"/>
+   </items>
+  </List>
+    </Page>
+  </Popover>
+  </core:FragmentDefinition>

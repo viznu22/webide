@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ <Popover contentHeight="500px" contentWidth="320px" placement="Bottom" showHeader="false">
+  <Page id="onOrdReasonFragPage" title="{i18n>OrdReason}">
+  <List id="onOrdReasonFragList" items="{/Orderreason}" mode="SingleSelectMaster" selectionChange="onSLIonOrdReasonIP">
+   <items>
+    <StandardListItem id = "onOrdReasonFragSli" title="{Description}" description="{Value}"/>
+   </items>
+   
+  </List>
+    </Page>
+  </Popover>
+  </core:FragmentDefinition>
